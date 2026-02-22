@@ -1,0 +1,102 @@
+/*Body-Design*/
+
+.article{
+  background-color: white;
+  border: solid white;      
+  padding: 20px;             
+  border-radius: 8px;         
+  margin: 20px 0;             
+  color: #333;                 
+  line-height: 1.6;
+
+}
+
+.font{
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 21px;
+      color: black;
+}
+
+.headline2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(238, 75, 0);
+}
+
+.headline1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(81, 0, 119);
+}
+
+/*Header-Design*/
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-header {
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  padding: 1rem 5%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ff9900; 
+}
+
+/*Header-Design-Mobile Ansicht*/
+
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column; /* Logo oben, Nav darunter */
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column; /* Links untereinander statt nebeneinander */
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Vertikaler Abstand zwischen den Links */
+  }
+
+  .logo {
+    margin-bottom: 5px;
+  }
+}
