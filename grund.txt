@@ -63,20 +63,11 @@
     <header>
         <p class="headline">TGRAFSoft</p>
         <a href="index.html" class="headlinks">Home</a>
-        <a href="about.html" class="headlinks">Über uns</a>
-        <a href="impress.html" class="headlinks">Impressum</a>
+        <a href="index.html" class="headlinks">Über uns</a>
+        <a href="index.html" class="headlinks">Impressum</a>
     </header>
 
-    <h1 class="text2">Über uns</h1>
-    <h2 class="text2">Wer sind wir</h2>
-    <p class="text2">Wir sind ein kleines Softwareunternehmen, das sich auf die erstellung von <br>
-        Lernprogrammen und Spielen, z.B. KidsOS 26, spezialisiert hat. <br>
-</p>
-<h2 class="text2">Was wir machen</h2>
-    <p class="text2"> Sie können bei und Webseiten in Auftrag gegeben werden. <br>
-        Sie können uns über tgrafsoft@gmail.com erreichen. <br>
-        Wir freuen uns auf Ihre Nachricht! <br> <br>
-    </p>
+
 
 </body>
 </html>

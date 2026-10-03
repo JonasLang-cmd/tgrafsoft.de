@@ -1,140 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="style.css">
-
     <style>
-        /*Body-Design*/
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
 
-.article{
-  background-color: white;
-  border: solid white;      
-  padding: 20px;             
-  border-radius: 8px;         
-  margin: 20px 0;             
-  color: #333;                 
-  line-height: 1.6;
+        body {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
 
-}
+        header {
+            background-color: green;
+            height: 100px;
+            width: 100%;
+            display: flex;
+            align-items: center; 
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
-.font{
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-      font-size: 21px;
-      color: black;
-}
+        .headline {
+            font-size: 30px;
+            color: white;
+            font-weight: 200;
+            margin-right: auto; 
+        }
 
-.headline2{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(238, 75, 0);
-}
+        .headlinks {
+            color: aliceblue;
+            margin-left: 30px; 
+            font-size: 18px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+        
+        .headlinks:hover {
+            font-size: 22px;
+            color: orange;
+        }
+        .text1{
+            margin: 30px;
+            display: flex;
+            justify-content: center;
+        }
 
-.headline1{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgb(81, 0, 119);
-}
-
-/*Header-Design*/
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.main-header {
-  background-color: #333;
-  color: white;
-  display: flex;
-  justify-content: space-between; 
-  align-items: center;
-  padding: 1rem 5%;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-}
-
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  letter-spacing: 1px;
-}
-
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 20px;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ff9900; 
-}
-
-/*Header-Design-Mobile Ansicht*/
-
-@media (max-width: 768px) {
-  .main-header {
-    flex-direction: column; /* Logo oben, Nav darunter */
-    text-align: center;
-  }
-
-  .nav-links {
-    flex-direction: column; /* Links untereinander statt nebeneinander */
-    width: 100%;
-    margin-top: 15px;
-  }
-
-  .nav-links li {
-    margin: 10px 0; /* Vertikaler Abstand zwischen den Links */
-  }
-
-  .logo {
-    margin-bottom: 5px;
-  }
-}
-
+        .text2{
+            margin: 30px;
+            display: flex;
+            justify-content: left;
+        }
     </style>
 </head>
 <body>
 
-    <!--Header-->
-    <header class="main-header">
-  <div class="logo">TGRAFSoft</div>
-  <nav>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">Über uns</a></li>
+    <header>
+        <p class="headline">TGRAFSoft</p>
+        <a href="index.html" class="headlinks">Home</a>
+        <a href="about.html" class="headlinks">Über uns</a>
+        <a href="impress.html" class="headlinks">Impressum</a>
+    </header>
 
-    </ul>
-  </nav>
-</header>
-<!----------------------------------------->
 
-<div class="article">
-    <h1 class="headline1">Herzlich Willkommen!</h1>
-    <br>
-    <img src="img/Herz.png" height="300px" width="300px">
-    <p class="font">Hallo, <br>
-       herzlich Willkommen auf der offiziellen Website von TGRAFSoft. <br> Klicken sie nun auf einen der Reiter oben um auf <br> eine andere Site zu gelangen!</p>
-</div>
+    <div >
+        <h1 class="text2">Neuigkeiten</h1>
+        <p class="text2">Hier finden Sie die neuesten Informationen zu unseren Produkten.</p>
+        
 
+        <h2 class="text2">KidsOS 26</h2>
+        
+        <img src="kidsos.png" width="500" height="300" class="text2">
+        <p class="text2">Wie sie vieleicht schon wissen, ist KidsOS 26 nun verfügbar!<br>
+        KidsOS ist ein Programm welches Kindern ab 6 Jahren Spiel & Spaß am PC ermöglicht. Es ist ein  <br>
+        Programm welches sich über Windows legt und das Bedienen des PCs für Kinder erleichtert.<br>
+        Dieses Prinzip kennen sie vieleicht aus Microsoft BOB (r). <br><br> Diese Apps sind verfügbar:
+        <br>- Store<br>
+    - Einstellungen<br>
+- Apfel-Jagt<br>
+- Kalender<br>
+-Snake <br>
+-Malen<br>
+-Senso<br>
+-Flappy Bird<br>
+- ...<br></p><br>
+
+
+    </div>
 </body>
 </html>
-
